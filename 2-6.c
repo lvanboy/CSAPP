@@ -245,6 +245,8 @@
 		printf("the max length of LCS is %d\n",length); 
 		
 	}
+	
+	
 int main(){
 	
 	char str[8] = "00359141"; 
@@ -252,13 +254,19 @@ int main(){
 	long int dec = 10;
 	char binary[35]; 
 	char binary01[35];
+	
 	dec = hextodec(str); 
 	dectobin(dec,binary);
 	dec = hextodec(str1); 
 	dectobin(dec,binary01);
+	
 	LCS(binary,binary01);
+	
 	DRLCS(binary,binary01);
+	
 	SLCS(binary,binary01);
+	
 	RSLCS(binary,binary01); 
+	
 	return 0; 
 }
